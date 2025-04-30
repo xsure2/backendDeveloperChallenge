@@ -1,0 +1,22 @@
+paths:
+  /testers:
+    get:
+      summary: Obtener todos los testers
+      responses:
+        '200':
+          description: Lista de testers
+    post:
+      summary: Crear un tester
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: "Juan Pérez"
+      responses:
+        '201':
+          description: Tester creado

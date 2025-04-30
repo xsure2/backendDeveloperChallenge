@@ -1,0 +1,35 @@
+paths:
+  /tests:
+    get:
+      summary: Obtener tests filtrados por tester o producto
+      parameters:
+        - in: query
+          name: testerId
+          schema:
+            type: string
+        - in: query
+          name: productId
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Lista de tests
+
+    post:
+      summary: Crear un nuevo test
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                testerId:
+                  type: string
+                productId:
+                  type: string
+                size:
+                  type: string
+      responses:
+        '201':
+          description: Test creado
