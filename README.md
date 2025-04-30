@@ -1,6 +1,3 @@
-npx knex --knexfile knexfile.cjs migrate:latest
-npx knex --knexfile knexfile.cjs migrate:latest --env test
-
 
 # 🔪 Product Testing API
 
@@ -34,8 +31,8 @@ Una API RESTful construida con Node.js siguiendo los principios de arquitectura 
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repo.git
-cd tu-repo
+git clone https://github.com/xsure2/backendDeveloperChallenge.git
+
 ```
 
 ### 2. Instalar dependencias
